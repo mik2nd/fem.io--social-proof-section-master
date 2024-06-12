@@ -164,5 +164,12 @@ div:has(img) img {
   }
   footer {
     grid-template-columns: repeat(3, 1fr);
+
+    > :nth-child(2) {
+      translate: 0 calc(var(--spacing) * 2);
+    }
+    > :nth-child(3) {
+      translate: 0 calc(var(--spacing) * 4);
+    }
   }
 }
